@@ -5,6 +5,7 @@
 <style>
 nav {
   background-color: #31384A;
+  z-index: 9999;
 }
 
 .resume-btn {
@@ -30,7 +31,7 @@ a {
 }
 </style>
 
-<nav class="flex flex-grow justify-between items-center px-12 fixed w-full shadow-xl">
+<nav class="flex flex-grow justify-between items-center px-2 md:px-12 fixed w-full shadow-xl">
   <div>
     <a href=".">
     <svg height="40" viewBox="0 0 107 76" fill="none" xmlns="http://www.w3.org/2000/svg">
