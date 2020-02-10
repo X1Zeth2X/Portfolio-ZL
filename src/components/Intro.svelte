@@ -24,8 +24,8 @@
 }
 </style>
 
-<div class="flex justify-center flex-wrap container mx-auto pt-40 pb-20 md:px-20 px-10">
-  <div class="w-full lg:w-2/4">
+<div class="flex justify-center flex-wrap container mx-auto pt-40 pb-20">
+  <div class="w-11/12 lg:w-2/4">
     <p class="leading-none font-bold md:text-5xl text-4xl md:mb-2 mb-5">
       Hi I'm Zeth Leonardo.
     </p>
