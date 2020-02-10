@@ -1,60 +1,48 @@
 <script>
-	export let segment;
+  export let segment;
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+.resume-btn {
+  border: 2px solid #C6FFC5;
+  color: #C6FFC5;
+  padding: 0.4em 0.8em;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: .3em;
+  transition: 0.25s ease-out;
+}
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+.resume-btn:hover {
+  background-color: #C6FFC5;
+  color: #3E465B;
+}
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+a {
+  text-decoration: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.2em;
+}
 </style>
 
-<nav>
-	<ul>
-		<li><a class:selected='{segment === undefined}' href='.'>home</a></li>
-		<li><a class:selected='{segment === "about"}' href='about'>about</a></li>
+<!-- <li><a class:selected='{segment === "about"}' href='about'>about</a></li> -->
 
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class:selected='{segment === "blog"}' href='blog'>blog</a></li>
-	</ul>
+<nav class="flex flex-wrap justify-between items-center px-40 pt-2 ">
+  <div>
+    <a href=".">
+    <svg height="50" viewBox="0 0 107 76" fill="none" xmlns="http://www.w3.org/2000/svg" class="-mb-2 -ml-2">
+      <path d="M11.1235 36.536C19.9092 28.1594 38.4942 12.4319 42.5491 16.5348C47.6177 21.6633 19.7402 53.973 22.7814 60.1273C25.8226 66.2815 64.3442 34.4846 56.7413 29.8689C49.1383 25.2533 42.0422 36.1935 45.0834 40.6389C48.1246 45.0842 56.2344 52.9473 61.303 44.7417C65.3579 38.1772 62.9926 17.0476 61.303 7.3034L81.0707 75C79.5501 54.6568 74.9883 11.8165 68.906 3.20058C73.8057 11.5772 83.8078 29.9715 84.6187 36.536C85.6325 44.7417 77.5227 9.86767 86.6462 14.9962C95.7697 20.1247 95.2629 38.0746 99.3178 27.3047C103.373 16.5348 107.428 7.3034 99.3178 3.20058C92.8299 -0.0816815 31.736 37.7327 2 57.0501" stroke="white" stroke-width="5"/>
+    </svg>
+    </a>
+  </div>
+
+  <div>
+    <a href="about" class:font-bold='{segment === "about"}' >About</a>
+    <a href="#!">Skills</a>
+    <a href="#!">Projects</a>
+    <a href="." class="resume-btn">
+      Contact
+    </a>
+  </div>
 </nav>
