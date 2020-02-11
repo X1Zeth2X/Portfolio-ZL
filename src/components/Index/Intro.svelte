@@ -24,8 +24,8 @@
 }
 </style>
 
-<div class="flex justify-center flex-wrap container mx-auto pt-24 lg:pt-40 pb-20">
-  <div class="w-11/12 lg:w-2/4">
+<div class="flex justify-center flex-wrap container mx-auto pt-20 lg:pt-40 pb-20">
+  <div class="w-11/12 lg:w-2/4 z-10 text-center md:text-left">
     <p class="leading-none font-bold md:text-5xl text-4xl md:mb-2 mb-5">
       Hi I'm Zeth Leonardo.
     </p>
@@ -40,7 +40,7 @@
     </button>
   </div>
 
-  <div class="w-full lg:w-2/4 lg:-ml-24 lg:-mt-20 -ml-10 mt-20">
+  <div class="w-full lg:w-2/4 lg:-ml-24 lg:-mt-20 -ml-10 mt-5">
     <svg fill="none" viewBox="0 0 634 480" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="68" cy="411" rx="68" ry="69" fill="url(#i)"/>
     <ellipse cx="597.5" cy="101" rx="36.5" ry="37" fill="url(#h)"/>
