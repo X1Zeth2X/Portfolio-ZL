@@ -40,7 +40,7 @@ a {
     display: none;
   }
 
-  .nav {
+  nav {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     font-size: .85em;
@@ -50,7 +50,7 @@ a {
 }
 </style>
 
-<nav class="px-2 md:px-12 fixed w-full shadow-xl nav">
+<nav class="px-2 md:px-12 fixed w-full shadow-xl">
   <div class="sig">
     <a href=".">
     <svg height="40" viewBox="0 0 107 76" fill="none" xmlns="http://www.w3.org/2000/svg">
