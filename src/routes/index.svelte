@@ -1,5 +1,6 @@
 <script>
   import Intro from "../components/Index/Intro.svelte";
+  import Projects from "../components/Index/Projects.svelte";
 </script>
 
 <svelte:head>
@@ -11,6 +12,4 @@
 <!-- Landing view -->
 <Intro />
 
-<div class="py-12 h-100 text-5xl text-center">
-Noice
-</div>
+<Projects />
