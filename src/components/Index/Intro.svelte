@@ -1,3 +1,9 @@
+<script>
+  function goToContact() {
+    window.location.href = "contact"
+  }
+</script>
+
 <style>
 .intro {
   font-weight: 300;
@@ -35,7 +41,7 @@
       a focus on high quality products.
     </p>
 
-    <button class="btn mt-10" href="google.com">
+    <button class="btn mt-10" on:click={goToContact}>
       Get in touch
     </button>
   </div>
