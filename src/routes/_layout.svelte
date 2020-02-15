@@ -6,6 +6,6 @@
 
 <Nav {segment}/>
 
-<main class="pt-16">
+<main class="pt-24">
 	<slot></slot>
 </main>
