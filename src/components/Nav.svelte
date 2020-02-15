@@ -34,6 +34,13 @@ a {
   font-size: 1.2em;
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  border-color: #3E465B;
+  color: #3E465B;
+}
+
 @media only screen and (max-width: 600px) {
   .sig {
     visibility: hidden;
@@ -63,8 +70,10 @@ a {
     <a href="about" class:font-bold='{segment === "about"}' >About</a>
     <a href="#!">Skills</a>
     <a href="#!">Projects</a>
-    <a href="." class="resume-btn pt-12">
-      Contact
-    </a>
+
+    <a href="contact"
+      class="resume-btn pt-12"
+      class:disabled='{segment === "contact"}'
+    >Contact</a>
   </div>
 </nav>
